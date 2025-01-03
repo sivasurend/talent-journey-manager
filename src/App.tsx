@@ -8,6 +8,7 @@ import CompanySetup from "./pages/CompanySetup";
 import CreateJob from "./pages/CreateJob";
 import EvaluationCriteria from "./pages/EvaluationCriteria";
 import Applicants from "./pages/Applicants";
+import ManagerFeedback from "./pages/ManagerFeedback";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
               <Route path="/create-job" element={<CreateJob />} />
               <Route path="/evaluation" element={<EvaluationCriteria />} />
               <Route path="/applicants" element={<Applicants />} />
+              <Route path="/manager-feedback" element={<ManagerFeedback />} />
             </Routes>
           </main>
         </div>
