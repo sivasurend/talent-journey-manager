@@ -7,6 +7,7 @@ import { Navigation } from "@/components/Navigation";
 import CompanySetup from "./pages/CompanySetup";
 import CreateJob from "./pages/CreateJob";
 import EvaluationCriteria from "./pages/EvaluationCriteria";
+import Applicants from "./pages/Applicants";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
               <Route path="/" element={<CompanySetup />} />
               <Route path="/create-job" element={<CreateJob />} />
               <Route path="/evaluation" element={<EvaluationCriteria />} />
+              <Route path="/applicants" element={<Applicants />} />
             </Routes>
           </main>
         </div>
