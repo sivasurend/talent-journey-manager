@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FeedbackModal } from "@/components/FeedbackModal";
 import { FeedbackTable } from "@/components/FeedbackTable";
-import { CandidateFeedback, Decision } from "@/types/managerFeedback";
+import { CandidateFeedback } from "@/types/managerFeedback";
 
 // Dummy data for demonstration
 const dummyFeedbacks: CandidateFeedback[] = [
