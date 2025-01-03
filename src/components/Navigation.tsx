@@ -24,9 +24,9 @@ const navItems = [
     path: "/applicants",
   },
   {
-    title: "Feedback",
+    title: "Manager Feedback",
     icon: MessageSquare,
-    path: "/feedback",
+    path: "/manager-feedback",
   },
 ];
 
