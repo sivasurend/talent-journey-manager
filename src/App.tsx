@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import CompanySetup from "./pages/CompanySetup";
+import CreateJob from "./pages/CreateJob";
 
 const queryClient = new QueryClient();
 
@@ -14,10 +15,15 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<CompanySetup />} />
-        </Routes>
+        <div className="flex min-h-screen">
+          <Navigation />
+          <main className="flex-1 ml-64">
+            <Routes>
+              <Route path="/" element={<CompanySetup />} />
+              <Route path="/create-job" element={<CreateJob />} />
+            </Routes>
+          </main>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
